@@ -1,0 +1,87 @@
+/* Theme fixes for White Moon to integrate well with Plasma 5
+   by deu */
+
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* Toolbar */
+#navigator-toolbox > toolbar:not(:-moz-lwtheme) {
+    background-color: #eff0f1;
+}
+/* Status bar */
+#addon-bar:not(:-moz-lwtheme), #FindToolbar:not(:-moz-lwtheme) {
+    background-image: none;
+    background-color: #eff0f1;
+}
+/* Address bar */
+#navigator-toolbox[tabsontop="true"] > #nav-bar:not(:-moz-lwtheme) {
+    background-image: none;
+    background-color: #eff0f1;
+}
+
+/* Bookmarks aligned to the right in the menubar */
+#toolbar-menubar {
+    -moz-box-align: stretch;
+}
+#toolbar-menubar #personal-bookmarks scrollbox {
+    -moz-box-pack: end;
+}
+/* Tweak bookmark bar items */
+#toolbar-menubar #personal-bookmarks .toolbarbutton-icon {
+    display: none;
+}
+#toolbar-menubar #personal-bookmarks .toolbarbutton-text {
+    font-size: x-small;
+}
+
+/* Tab borders */
+.tabbrowser-tab:first-child {
+    border-top-left-radius: 4px;
+}
+.tabbrowser-tab:last-child {
+    border-top-right-radius: 4px;
+}
+/* Not selected inactive tabs */
+.tabbrowser-tab {
+    background-image: none;
+    background-color: #c9cbcd;
+    border: 1px solid #b1b4b6;
+    padding: 4px;
+}
+/* Selected inactive tab */
+.tabbrowser-tab:hover {
+    background-image: none;
+    background-color: #dce9f0;
+}
+/* Active tab */
+.tabbrowser-tab[selected="true"] {
+    background-image: none;
+    background-color: #eff0f1;
+    border-bottom-color: #eff0f1;
+}
+
+/* New tab button */
+.tabs-newtab-button {
+    background-image: none;
+    border: none;
+}
+.tabs-newtab-button .toolbarbutton-icon {
+    padding-top: 3px;
+    opacity: 0.3;
+}
+.tabs-newtab-button:hover {
+    background-image: none;
+    border: none;
+}
+.tabs-newtab-button:hover .toolbarbutton-icon {
+    opacity: 1;
+}
+
+/* Tab close button */
+.tab-close-button {
+    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAQCAMAAACROYkbAAAAb1BMVEUAAACSkpKVlZXVVVXbSUmOjo7ZQlWPj4/ZRFPaRFKPj4/aQ1OPj4/aRFLaRFOPj4+QkJDaRFPaRVKPj4/aRFOPj4/aQ1OPj4/Y2NjaRFPyvsOPj4/Y2NjaRFPyvsOPj4+rq6vaRFPjc3729vb87/B6Hc7hAAAAJXRSTlMAAwMDAw0NNjY2NzdjY2NkZGRkZ2doaHl5eXl6enp6f39/f39//zYkbgAAAMtJREFUOMvNkskSgjAMQFu2sikiaNlD0P//RpsKHDLlxEEzubzMS2eaRIi/CJkWfV8ouXGQleNYJsERcz98gI0q/HL0RBt15Gbuy5VNxb4ZrL7pCFzMfZECNDPAPAAo4gyxWxCXCTF2MffFzcBrNgmQE9+N/F5MIl5dzH2hgSrEoIlbpA7ysXUx988/cPoLCmCgoTTrUBLEiYbWrUPjzH0hq30tnl1bva/NdzH3zWFU7JBqdkiMuS+Ep3Ktc+Vt7MfXtr3E/hFz/7fxAUdBNYuKIP1RAAAAAElFTkSuQmCC);
+}
+
+/* Hide ugly double dropmarker */
+.menulist-dropmarker {
+    display: none;
+}
