@@ -77,7 +77,7 @@
 }
 
 /* Tab close button */
-.tab-close-button {
+.tab-close-button, .tab-close-button:hover {
     list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAQCAMAAACROYkbAAAAb1BMVEUAAACSkpKVlZXVVVXbSUmOjo7ZQlWPj4/ZRFPaRFKPj4/aQ1OPj4/aRFLaRFOPj4+QkJDaRFPaRVKPj4/aRFOPj4/aQ1OPj4/Y2NjaRFPyvsOPj4/Y2NjaRFPyvsOPj4+rq6vaRFPjc3729vb87/B6Hc7hAAAAJXRSTlMAAwMDAw0NNjY2NzdjY2NkZGRkZ2doaHl5eXl6enp6f39/f39//zYkbgAAAMtJREFUOMvNkskSgjAMQFu2sikiaNlD0P//RpsKHDLlxEEzubzMS2eaRIi/CJkWfV8ouXGQleNYJsERcz98gI0q/HL0RBt15Gbuy5VNxb4ZrL7pCFzMfZECNDPAPAAo4gyxWxCXCTF2MffFzcBrNgmQE9+N/F5MIl5dzH2hgSrEoIlbpA7ysXUx988/cPoLCmCgoTTrUBLEiYbWrUPjzH0hq30tnl1bva/NdzH3zWFU7JBqdkiMuS+Ep3Ktc+Vt7MfXtr3E/hFz/7fxAUdBNYuKIP1RAAAAAElFTkSuQmCC);
 }
 
