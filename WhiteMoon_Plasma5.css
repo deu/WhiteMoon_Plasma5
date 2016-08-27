@@ -96,3 +96,8 @@
 .menulist-dropmarker {
     display: none;
 }
+
+/* Prevent menu items from blanking out on hover/open */
+menubar > menu[_moz-menuactive="true"]:not([disabled="true"]) {
+  color: inherit;
+}
