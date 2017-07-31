@@ -32,6 +32,10 @@
 #toolbar-menubar #personal-bookmarks .toolbarbutton-text {
     font-size: x-small;
 }
+/* Hide the dropmarker in the bookmark bar: */
+#toolbar-menubar #personal-bookmarks .toolbarbutton-menu-dropmarker {
+    display: none !important;
+}
 
 /* Tab borders */
 .tabbrowser-tab:first-child {
@@ -45,6 +49,7 @@
     background-image: none;
     background-color: #c9cbcd;
     border: 1px solid #b1b4b6;
+    border-radius: 0;
     padding: 4px;
 }
 /* Selected inactive tab */
@@ -58,6 +63,12 @@
     background-color: #eff0f1;
     border-bottom-color: #eff0f1;
 }
+/*.tabbrowser-tab:not(:first-child)[selected="true"] {
+    border-top-left-radius: 3px;
+}
+.tabbrowser-tab:not(:last-child)[selected="true"] {
+    border-top-right-radius: 3px;
+}*/
 
 /* New tab button */
 .tabs-newtab-button {
@@ -88,16 +99,17 @@
 .tab-close-button:hover:active, .tab-close-button:hover:active[selected="true"] {
     -moz-image-region: rect(0, 48px, 16px, 32px);
 }
+.tab-close-button,
 .tab-close-button[selected="true"] {
     -moz-image-region: rect(0, 16px, 16px, 0);
 }
 
 /* Hide ugly double dropmarker */
-.menulist-dropmarker {
+/*.menulist-dropmarker {
     display: none;
-}
+}*/
 
 /* Prevent menu items from blanking out on hover/open */
 menubar > menu[_moz-menuactive="true"]:not([disabled="true"]) {
-  color: inherit;
+    color: inherit;
 }
