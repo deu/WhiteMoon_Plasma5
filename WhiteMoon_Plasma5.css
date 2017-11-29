@@ -1,5 +1,5 @@
 /* Theme fixes for White Moon to integrate well with Plasma 5
-   https://github.com/deuiore/WhiteMoon_Plasma5 */
+   https://github.com/deu/WhiteMoon_Plasma5 */
 
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
@@ -110,6 +110,6 @@
 }*/
 
 /* Prevent menu items from blanking out on hover/open */
-menubar > menu[_moz-menuactive="true"]:not([disabled="true"]) {
+/*menubar > menu[_moz-menuactive="true"]:not([disabled="true"]) {
     color: inherit;
-}
+}*/
